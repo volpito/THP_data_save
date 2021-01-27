@@ -5,5 +5,5 @@ Bundler.require
 require_relative 'lib/app/scrapper.rb'
 
 
-@Scrap = Scrapping.new.perform
+Scrapping.new.perform
 
