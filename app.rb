@@ -1,7 +1,9 @@
 require 'bundler'
 Bundler.require
 
-$:.unshift File.expand_path("./../lib", __FILE__)
-require 'app/fichier_1'
-require 'views/fichier_2'
+#$:.unshift File.expand_path("")
+require_relative 'lib/app/scrapper.rb'
+
+
+@Scrap = Scrapping.new.perform
 
